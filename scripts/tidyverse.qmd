@@ -9,7 +9,8 @@ editor: visual
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Time 
+## Time
+
 Quarto rendered `r Sys.time()`
 
 ## Import des library
@@ -20,7 +21,6 @@ library(tidyverse)
 ```
 
 ## Indices boursiers
-
 
 ```{r echo=FALSE}
 getSymbols("AAPL", src="yahoo")
