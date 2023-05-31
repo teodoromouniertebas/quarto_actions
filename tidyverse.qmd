@@ -1,0 +1,48 @@
+---
+title: "tidyverse"
+format: 
+  html: default
+  pdf: default
+date: "`r Sys.time()`"
+editor: visual
+bibliography: references.bib
+---
+
+```{r setup, include=FALSE}
+#| label: load-packages
+#| message: false
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introduction {.smaller}
+
+## Time
+
+Quarto rendered `r Sys.time()`
+
+## Import des library
+
+```{r}
+#| warning: false
+#| message: false
+library(quantmod)
+library(tidyverse)
+```
+
+# Analysis
+
+## Indices boursiers {.smaller}
+
+```{r}
+#| label: fig-boursier
+#| warning: false
+#| message: false
+#| fig-cap: |
+#|   Figure indice bourcier
+getSymbols("AAPL", src="yahoo")
+chartSeries(AAPL, subset="last 6 months", theme=chartTheme("white"))
+```
+
+La @fig-boursier ci-dessus elle provient de tel données de cet article [@horst2020]
+
+## References

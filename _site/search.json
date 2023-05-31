@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "About.html",
+    "href": "About.html",
+    "title": "About",
+    "section": "",
+    "text": "this is a demo website"
+  },
+  {
+    "objectID": "tidyverse.html",
+    "href": "tidyverse.html",
+    "title": "tidyverse",
+    "section": "",
+    "text": "Quarto rendered 2023-05-31 12:10:35\n\n\n\n\nlibrary(quantmod)\nlibrary(tidyverse)"
+  },
+  {
+    "objectID": "tidyverse.html#indices-boursiers",
+    "href": "tidyverse.html#indices-boursiers",
+    "title": "tidyverse",
+    "section": "Indices boursiers",
+    "text": "Indices boursiers\n\ngetSymbols(\"AAPL\", src=\"yahoo\")\n\n[1] \"AAPL\"\n\nchartSeries(AAPL, subset=\"last 6 months\", theme=chartTheme(\"white\"))\n\n\n\n\nFigure 1: Figure indice bourcier\n\n\n\n\nLa Figure 1 ci-dessus elle provient de tel données de cet article (Horst, Hill, and Gorman 2020)"
+  }
+]
