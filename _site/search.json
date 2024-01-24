@@ -11,7 +11,11 @@
     "href": "tidyverse.html",
     "title": "tidyverse",
     "section": "",
+<<<<<<< HEAD
     "text": "Quarto rendered 2024-01-24 15:26:04\n\n\n\n\nlibrary(quantmod)\nlibrary(tidyverse)"
+=======
+    "text": "Quarto rendered 2024-01-24 14:22:43.938924\n\n\n\n\nlibrary(quantmod)\nlibrary(tidyverse)"
+>>>>>>> d767877a5db69b3a6017d5812676923cbd693f16
   },
   {
     "objectID": "tidyverse.html#indices-boursiers",
@@ -25,7 +29,11 @@
     "href": "tidyverse.html#time",
     "title": "tidyverse",
     "section": "",
+<<<<<<< HEAD
     "text": "Quarto rendered 2024-01-24 15:26:04"
+=======
+    "text": "Quarto rendered 2024-01-24 14:22:43.938924"
+>>>>>>> d767877a5db69b3a6017d5812676923cbd693f16
   },
   {
     "objectID": "tidyverse.html#import-des-library",
