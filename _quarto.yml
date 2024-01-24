@@ -14,5 +14,3 @@ execute:
 
 format: html
 
-website:
-  site-url: "https://teodoromouniertebas.github.io/quarto_actions/"
