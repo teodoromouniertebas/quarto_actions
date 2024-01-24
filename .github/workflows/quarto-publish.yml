@@ -1,14 +1,14 @@
-# on:
-#   push:
-#     branches: main
+on:
+  push:
+    branches: main
 
 name: Render and Publish
 
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
-    env:
-      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+    permissions:
+      contents: write
     steps:
       - name: Check out repository
         uses: actions/checkout@v3
@@ -30,17 +30,18 @@ jobs:
             any::tidyverse
             any::quantmod
 
-      - name: Render Quarto Project
-        uses: quarto-dev/quarto-actions/render@v2
+      - name: Publish to github Pages
+        uses: quarto-dev/quarto-actions/publish@v2
         with:
-          to: html # If set, it will be equivalent to `quarto render --to html`
-          path: tidyverse.qmd
+          target: gh-pages
+        env:
+          GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
 
       - name: commit files
         run: |
           git config --local user.name "$GITHUB_ACTOR"
           git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
-          git add _site/*
+          git add .
           git commit -m "Saving the results" || echo "no changes to commit"
           git push origin || echo "no changes to commit"
 

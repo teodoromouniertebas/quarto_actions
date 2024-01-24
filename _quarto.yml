@@ -8,3 +8,11 @@ website:
     left:
       - tidyverse.qmd
       - About.qmd
+
+execute:
+  freeze: auto
+
+format: html
+
+website:
+  site-url: "https://teodoromouniertebas.github.io/quarto_actions/"
