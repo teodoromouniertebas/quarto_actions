@@ -11,13 +11,27 @@
     "href": "tidyverse.html",
     "title": "tidyverse",
     "section": "",
-    "text": "Quarto rendered 2023-05-31 12:10:35\n\n\n\n\nlibrary(quantmod)\nlibrary(tidyverse)"
+    "text": "Quarto rendered 2024-01-24 13:15:14\n\n\n\n\nlibrary(quantmod)\nlibrary(tidyverse)"
   },
   {
     "objectID": "tidyverse.html#indices-boursiers",
     "href": "tidyverse.html#indices-boursiers",
     "title": "tidyverse",
     "section": "Indices boursiers",
-    "text": "Indices boursiers\n\ngetSymbols(\"AAPL\", src=\"yahoo\")\n\n[1] \"AAPL\"\n\nchartSeries(AAPL, subset=\"last 6 months\", theme=chartTheme(\"white\"))\n\n\n\n\nFigure 1: Figure indice bourcier\n\n\n\n\nLa Figure 1 ci-dessus elle provient de tel données de cet article (Horst, Hill, and Gorman 2020)"
+    "text": "Indices boursiers\n\ngetSymbols(\"AAPL\", src=\"yahoo\")\n\n[1] \"AAPL\"\n\nchartSeries(AAPL, subset=\"last 6 months\", theme=chartTheme(\"white\"))\n\n\n\n\nFigure 1: Figure indice bourcier\n\n\n\n\nLa Figure 1 ci-dessus elle provient de tel données de cet article (Horst, Hill, and Gorman 2020)"
+  },
+  {
+    "objectID": "tidyverse.html#time",
+    "href": "tidyverse.html#time",
+    "title": "tidyverse",
+    "section": "",
+    "text": "Quarto rendered 2024-01-24 13:15:14"
+  },
+  {
+    "objectID": "tidyverse.html#import-des-library",
+    "href": "tidyverse.html#import-des-library",
+    "title": "tidyverse",
+    "section": "",
+    "text": "library(quantmod)\nlibrary(tidyverse)"
   }
 ]
