@@ -6,7 +6,5 @@ website:
   title: "Welcome to quarto"
   navbar:
     left:
-      - href: index.qmd
-        text: Home
       - tidyverse.qmd
       - About.qmd
